@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark">
+<title>パーソナルジム BEYOND 春日井店｜無料体験トレーニング受付中</title>
+<meta name="description" content="春日井市鳥居松のパーソナルジムBEYOND春日井店。完全マンツーマン指導×ストレスフリーな食事サポート。体験トレーニング・カウンセリング無料、手ぶらOK、無料駐車場完備。空き枠からそのままWeb予約できます。">
+<meta property="og:title" content="パーソナルジム BEYOND 春日井店｜無料体験トレーニング受付中">
+<meta property="og:description" content="完全マンツーマン指導のパーソナルジムBEYOND春日井店。体験・カウンセリング無料、手ぶらOK、無料駐車場完備。">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://calyn-transce.vercel.app">
+<link rel="preload" as="image" href="assets/hero.jpg" media="(min-width: 769px)">
+<link rel="preload" as="image" href="assets/hero-mobile.jpg" media="(max-width: 768px)">
+
+<!-- ▼▼ 計測タグ設定: Google広告・GA4のIDが発行されたら下記4つを書き換えるだけで計測が始まります ▼▼ -->
+<script>
+window.TRACKING = {
+  GA4_ID: "",             // 例: "G-XXXXXXXXXX"（GA4測定ID）
+  ADS_ID: "",             // 例: "AW-XXXXXXXXX"（Google広告コンバージョンID）
+  ADS_BOOKING_LABEL: "",  // 予約完了コンバージョンのラベル
+  ADS_CALL_LABEL: ""      // 電話タップコンバージョンのラベル
+};
+(function () {
+  var ids = [window.TRACKING.GA4_ID, window.TRACKING.ADS_ID].filter(Boolean);
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { dataLayer.push(arguments); };
+  if (!ids.length) return; // ID未設定の間は何も読み込まない
+  var s = document.createElement("script");
+  s.async = true;
+  s.src = "https://www.googletagmanager.com/gtag/js?id=" + ids[0];
+  document.head.appendChild(s);
+  gtag("js", new Date());
+  ids.forEach(function (id) { gtag("config", id); });
+})();
+function trackCV(type) {
+  try {
+    var t = window.TRACKING;
+    gtag("event", type === "call" ? "phone_call_click" : "booking_complete", {});
+    if (t.ADS_ID) {
+      var label = type === "call" ? t.ADS_CALL_LABEL : t.ADS_BOOKING_LABEL;
+      if (label) gtag("event", "conversion", { send_to: t.ADS_ID + "/" + label });
+    }
+  } catch (e) {}
+}
+</script>
+<!-- ▲▲ 計測タグ設定ここまで ▲▲ -->
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#0b0b0d;
+  --black2:#131316;
+  --black3:#1c1c21;
+  --white:#ffffff;
+  --gray:#9b9ba3;
+  --line:rgba(255,255,255,.12);
+  --gold:#c8a96a;
+  --gold2:#e6cd96;
+  --gold-grad:linear-gradient(135deg,#d9bc7e 0%,#c8a96a 45%,#a8853f 100%);
+  --radius:14px;
+  --font-en:'Oswald',sans-serif;
+  --font-ja:'Noto Sans JP',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--font-ja);background:var(--black);color:var(--white);line-height:1.8;-webkit-font-smoothing:antialiased;overflow-x:hidden;line-break:strict}
+img{max-width:100%;display:block}
+[hidden]{display:none!important}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.en{font-family:var(--font-en);letter-spacing:.14em}
+section{padding:88px 0}
+@media(max-width:768px){section{padding:64px 0}}
+
+/* ---------- section heading ---------- */
+.sec-head{text-align:center;margin-bottom:48px}
+.sec-head .en-label{display:block;color:var(--gold);font-family:var(--font-en);font-size:13px;letter-spacing:.3em;text-transform:uppercase;margin-bottom:10px}
+.sec-head h2{font-size:clamp(24px,4.4vw,38px);font-weight:900;line-height:1.45}
+.sec-head h2 em{font-style:normal;color:var(--gold2)}
+.sec-lead{text-align:center;color:var(--gray);max-width:680px;margin:-24px auto 48px;font-size:15px}
+
+/* ---------- header ---------- */
+header{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:14px 20px;transition:background .3s;background:linear-gradient(to bottom,rgba(0,0,0,.65),transparent)}
+header.scrolled{background:rgba(11,11,13,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .logo{display:flex;align-items:center;gap:10px}
+header .logo img{height:26px;width:auto}
+header .logo span{font-size:11px;color:var(--gray);letter-spacing:.12em;border-left:1px solid var(--line);padding-left:10px}
+.btn-head{background:var(--gold-grad);color:#161104;font-weight:700;font-size:13px;padding:10px 20px;border-radius:999px;letter-spacing:.05em;white-space:nowrap}
+@media(max-width:520px){header .logo span{display:none}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;padding:0 0 96px;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;background:url('assets/hero.jpg') center 30%/cover no-repeat;z-index:-2;filter:brightness(.92)}
+@media(max-width:768px){.hero::before{background-image:url('assets/hero-mobile.jpg')}}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:
+  linear-gradient(to top,rgba(11,11,13,.97) 0%,rgba(11,11,13,.55) 38%,rgba(11,11,13,.25) 65%,rgba(11,11,13,.45) 100%)}
+.hero .wrap{width:100%}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--gold);color:var(--gold2);font-size:12px;letter-spacing:.18em;padding:6px 14px;border-radius:999px;margin-bottom:22px;background:rgba(11,11,13,.45)}
+.hero h1{font-size:clamp(29px,7vw,64px);font-weight:900;line-height:1.32;text-shadow:0 4px 30px rgba(0,0,0,.6)}
+.hero h1 .gold{color:var(--gold2);white-space:nowrap}
+.hero p.sub{margin-top:18px;font-size:clamp(14px,2.4vw,17px);color:#e8e8ea;max-width:560px;text-shadow:0 2px 14px rgba(0,0,0,.7)}
+.hero-points{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.hero-points span{font-size:12.5px;font-weight:700;background:rgba(255,255,255,.1);backdrop-filter:blur(6px);border:1px solid var(--line);padding:7px 14px;border-radius:999px}
+.hero-points span b{color:var(--gold2)}
+.hero-cta{margin-top:32px;display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.slot-note{font-size:12.5px;color:var(--gold2);letter-spacing:.04em;min-height:1.5em}
+
+/* ---------- buttons ---------- */
+.btn-main{display:inline-flex;flex-direction:column;align-items:center;gap:2px;background:var(--gold-grad);color:#161104;font-weight:900;font-size:clamp(15px,3.4vw,17px);padding:clamp(15px,3.6vw,18px) clamp(22px,5vw,44px);border-radius:999px;box-shadow:0 10px 34px rgba(200,169,106,.35);transition:transform .2s,box-shadow .2s;text-align:center;border:none;cursor:pointer;font-family:var(--font-ja);max-width:100%}
+.btn-main small{font-size:11px;font-weight:700;letter-spacing:.08em}
+.btn-main:hover{transform:translateY(-2px);box-shadow:0 14px 40px rgba(200,169,106,.5)}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.4);color:#fff;font-size:14px;font-weight:700;padding:14px 26px;border-radius:999px;transition:border-color .2s,background .2s}
+.btn-ghost:hover{border-color:var(--gold);background:rgba(200,169,106,.08)}
+
+/* ---------- trust bar ---------- */
+.trust{background:var(--black2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:44px 0}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+@media(max-width:820px){.trust-grid{grid-template-columns:repeat(2,1fr)}}
+.t-item{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;padding:8px 10px}
+.t-icon{width:54px;height:54px;border-radius:50%;border:1px solid var(--gold);background:rgba(200,169,106,.09);display:grid;place-items:center;color:var(--gold2)}
+.t-icon svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.t-item .t-title{font-size:13.5px;font-weight:900;line-height:1.5}
+.t-item .t-title .en{color:var(--gold2);font-size:15px;letter-spacing:.08em}
+.t-item .t-sub{font-size:11px;color:var(--gray);line-height:1.6}
+
+/* ---------- worries ---------- */
+.worries-box{background:var(--black2);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(28px,5vw,52px);max-width:760px;margin:0 auto}
+.worries-box ul{list-style:none;display:grid;gap:16px}
+.worries-box li{display:flex;gap:14px;align-items:flex-start;font-size:clamp(14.5px,2.2vw,16.5px);font-weight:500}
+.worries-box li::before{content:"✓";flex:0 0 26px;height:26px;display:grid;place-items:center;background:var(--gold-grad);color:#161104;border-radius:50%;font-size:14px;font-weight:900;margin-top:3px}
+.worries-answer{text-align:center;margin-top:44px;font-size:clamp(17px,3vw,23px);font-weight:900;line-height:1.7}
+.worries-answer em{font-style:normal;color:var(--gold2)}
+.arrow-down{width:0;height:0;border-left:26px solid transparent;border-right:26px solid transparent;border-top:20px solid var(--gold);margin:28px auto 0}
+
+/* ---------- concept ---------- */
+.concept-state{text-align:center;max-width:720px;margin:0 auto 52px;font-size:clamp(14.5px,2.4vw,16.5px);color:#dcdce0;line-height:2.1}
+.concept-state b{color:var(--gold2)}
+.concept-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:820px){.concept-grid{grid-template-columns:1fr;max-width:460px;margin:0 auto}}
+.c-card{background:var(--black2);border:1px solid var(--line);border-radius:var(--radius);padding:30px 24px;text-align:center}
+.c-card .c-num{font-family:var(--font-en);color:transparent;-webkit-text-stroke:1px var(--gold);font-size:34px;line-height:1}
+.c-card h4{font-size:17px;font-weight:900;margin:12px 0 10px;line-height:1.6}
+.c-card h4 em{font-style:normal;color:var(--gold2)}
+.c-card p{font-size:13px;color:#cfcfd4;text-align:left}
+
+/* ---------- features ---------- */
+.feature{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,64px);align-items:center;margin-bottom:clamp(56px,9vw,96px)}
+.feature:last-child{margin-bottom:0}
+.feature.rev .f-img{order:2}
+.f-img{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:4/3}
+.f-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.feature:hover .f-img img{transform:scale(1.04)}
+.f-num{font-family:var(--font-en);font-size:clamp(44px,7vw,68px);color:transparent;-webkit-text-stroke:1px var(--gold);line-height:1}
+.f-body h3{font-size:clamp(20px,3.2vw,27px);font-weight:900;margin:10px 0 16px;line-height:1.5}
+.f-body h3 em{font-style:normal;color:var(--gold2)}
+.f-body p{color:#cfcfd4;font-size:14.5px}
+.f-body .note{color:var(--gray);font-size:11.5px;margin-top:10px}
+@media(max-width:768px){.feature{grid-template-columns:1fr}.feature.rev .f-img{order:0}}
+
+/* ---------- before/after ---------- */
+.ba-grid{display:grid;grid-template-columns:repeat(2,minmax(0,380px));gap:20px;justify-content:center}
+@media(max-width:768px){.ba-grid{grid-template-columns:1fr;max-width:420px;margin:0 auto}}
+.ba-card{background:var(--black2);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.ba-imgs{display:flex;height:300px;background:#000}
+.ba-imgs .half{flex:1;position:relative;overflow:hidden}
+.ba-imgs img{width:100%;height:100%;object-fit:cover;object-position:top center}
+.ba-imgs .tag{position:absolute;left:0;bottom:0;font-family:var(--font-en);font-size:11px;letter-spacing:.18em;padding:4px 12px;background:rgba(0,0,0,.72);color:#fff}
+.ba-imgs .half.after .tag{background:var(--gold-grad);color:#161104;font-weight:600}
+.ba-card.single .ba-imgs{display:block}
+.ba-card.single .ba-imgs img{object-position:center}
+.ba-caption{padding:16px 18px;font-size:13px;color:#cfcfd4}
+.ba-disclaimer{margin-top:26px;text-align:center;color:var(--gray);font-size:11.5px;line-height:1.9}
+
+/* ---------- price ---------- */
+.price-trial{max-width:680px;margin:0 auto 56px;background:linear-gradient(160deg,#23211b,#131316 60%);border:1px solid var(--gold);border-radius:var(--radius);padding:clamp(28px,5vw,44px);text-align:center;position:relative;overflow:hidden}
+.price-trial::before{content:"TRIAL";position:absolute;right:-10px;top:-26px;font-family:var(--font-en);font-size:90px;color:rgba(200,169,106,.08);letter-spacing:.1em}
+.price-trial .badge{display:inline-block;background:var(--gold-grad);color:#161104;font-weight:900;font-size:12.5px;padding:5px 18px;border-radius:999px;margin-bottom:14px}
+.price-trial h3{font-size:clamp(19px,3.4vw,26px);font-weight:900;line-height:1.5}
+.price-trial .zero{font-family:var(--font-en);font-size:clamp(56px,10vw,84px);color:var(--gold2);font-weight:600;line-height:1.1;margin:6px 0}
+.price-trial .zero small{font-size:.36em;color:var(--white);font-family:var(--font-ja);font-weight:700}
+.price-trial p{font-size:13px;color:#cfcfd4}
+.trial-gets{list-style:none;max-width:480px;margin:20px auto 0;display:grid;gap:10px;text-align:left}
+.trial-gets li{display:flex;gap:10px;align-items:flex-start;font-size:13.5px;color:#e8e8ea}
+.trial-gets li::before{content:"✓";flex:0 0 20px;height:20px;display:grid;place-items:center;background:var(--gold-grad);color:#161104;border-radius:50%;font-size:11px;font-weight:900;margin-top:3px}
+.trial-gets li b{color:var(--gold2)}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:820px){.price-grid{grid-template-columns:1fr;max-width:460px;margin:0 auto}}
+.price-card{background:var(--black2);border:1px solid var(--line);border-radius:var(--radius);padding:28px 24px;display:flex;flex-direction:column}
+.price-card.reco{border-color:var(--gold);position:relative}
+.price-card.reco::after{content:"人気";position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--gold-grad);color:#161104;font-size:11.5px;font-weight:900;padding:3px 16px;border-radius:999px}
+.price-card .plan-en{font-family:var(--font-en);color:var(--gold);font-size:12px;letter-spacing:.24em;text-transform:uppercase}
+.price-card h4{font-size:18px;font-weight:900;margin:6px 0 14px}
+.price-card .amount{font-family:var(--font-en);font-size:32px;font-weight:600;line-height:1.2}
+.price-card .amount small{font-size:13px;font-family:var(--font-ja);color:var(--gray);font-weight:400}
+.price-card ul{list-style:none;margin-top:16px;display:grid;gap:8px;font-size:13px;color:#cfcfd4}
+.price-card li::before{content:"・";color:var(--gold)}
+.price-notes{margin-top:30px;color:var(--gray);font-size:11.5px;line-height:2;max-width:820px;margin-left:auto;margin-right:auto}
+/* 料金比較表（一目で3プランを比較） */
+.price-table-wrap{max-width:680px;margin:0 auto}
+.price-table{width:100%;border-collapse:collapse;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;font-size:clamp(11px,2.5vw,13.5px)}
+.price-table th,.price-table td{padding:clamp(9px,2vw,15px) clamp(4px,1.4vw,12px);border-bottom:1px solid var(--line);border-right:1px solid var(--line);text-align:center;vertical-align:middle;line-height:1.45}
+.price-table th:last-child,.price-table td:last-child{border-right:none}
+.price-table tr:last-child td{border-bottom:none}
+.price-table thead th{background:var(--black3);font-weight:900}
+.price-table thead th.reco{background:var(--gold-grad);color:#161104}
+.price-table thead th .pop{display:block;font-size:9.5px;font-weight:900;margin-top:2px}
+.price-table .rowlabel{text-align:center;color:var(--gray);font-size:clamp(10px,2.1vw,11.5px);background:rgba(255,255,255,.03)}
+.price-table .amt{font-family:var(--font-en);font-weight:600;color:var(--gold2);font-size:clamp(13px,3.2vw,18px)}
+.price-table .yes{color:var(--gold2);font-weight:900;font-size:1.4em}
+
+/* ---------- gym/store ---------- */
+.gym-gallery{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:repeat(2,220px);gap:14px;margin-bottom:48px}
+.gym-gallery .g1{grid-row:span 2}
+.gym-gallery div{border-radius:var(--radius);overflow:hidden}
+.gym-gallery img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.gym-gallery div:hover img{transform:scale(1.05)}
+@media(max-width:768px){.gym-gallery{grid-template-columns:1fr 1fr;grid-template-rows:repeat(3,150px)}.gym-gallery .g1{grid-column:span 2;grid-row:span 1}}
+.store-info{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(24px,5vw,56px);background:var(--black2);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(24px,5vw,48px)}
+@media(max-width:768px){.store-info{grid-template-columns:1fr}}
+.store-info h3{font-size:21px;font-weight:900;margin-bottom:18px}
+.store-info dl{display:grid;grid-template-columns:96px 1fr;row-gap:12px;font-size:14px}
+.store-info dt{color:var(--gold2);font-weight:700}
+.store-info dd{color:#e3e3e7}
+.store-info dd small{color:var(--gray)}
+.store-map{border-radius:12px;overflow:hidden;min-height:280px;border:1px solid var(--line)}
+.store-map iframe{width:100%;height:100%;min-height:280px;border:0;filter:grayscale(.2)}
+.amenities{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.amenities span{font-size:11.5px;border:1px solid var(--line);color:#cfcfd4;padding:5px 12px;border-radius:999px}
+
+/* ---------- trainers ---------- */
+.trainer-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+@media(max-width:820px){.trainer-grid{grid-template-columns:repeat(2,1fr)}}
+.trainer-card{background:var(--black2);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.trainer-card img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.trainer-card .tc-body{padding:16px 16px 20px}
+.trainer-card .tc-role{font-size:10.5px;color:var(--gold);letter-spacing:.16em;font-family:var(--font-en);text-transform:uppercase}
+.trainer-card h4{font-size:16.5px;font-weight:900;margin:4px 0 8px}
+.trainer-card ul{list-style:none;font-size:11.5px;color:var(--gray);display:grid;gap:3px}
+.trainer-card li::before{content:"・";color:var(--gold)}
+.trainer-note{text-align:center;color:var(--gray);font-size:11.5px;margin-top:24px}
+
+/* ---------- flow ---------- */
+.flow-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media(max-width:820px){.flow-grid{grid-template-columns:repeat(2,1fr)}}
+.flow-card{background:var(--black2);border:1px solid var(--line);border-radius:var(--radius);padding:26px 20px;position:relative}
+.flow-card .step{font-family:var(--font-en);color:var(--gold);font-size:13px;letter-spacing:.2em}
+.flow-card h4{font-size:16.5px;font-weight:900;margin:8px 0 10px}
+.flow-card p{font-size:13px;color:#cfcfd4}
+.flow-time{text-align:center;margin-top:26px;color:var(--gray);font-size:13px}
+
+/* ---------- faq ---------- */
+.faq{max-width:760px;margin:0 auto}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;display:flex;gap:16px;align-items:baseline;padding:22px 8px;font-size:15.5px;font-weight:700;transition:color .2s}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"Q";font-family:var(--font-en);color:var(--gold);font-size:18px}
+.faq summary::after{content:"+";margin-left:auto;color:var(--gold);font-size:20px;font-family:var(--font-en);transition:transform .25s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq .a{display:flex;gap:16px;padding:0 8px 24px;color:#cfcfd4;font-size:14px}
+.faq .a::before{content:"A";font-family:var(--font-en);color:var(--gold2);font-size:18px}
+
+/* ---------- booking widget ---------- */
+#reserve{background:linear-gradient(180deg,var(--black) 0%,#15130e 30%,#15130e 100%)}
+.bk-box{max-width:760px;margin:0 auto;background:var(--black2);border:1px solid var(--gold);border-radius:18px;overflow:hidden;box-shadow:0 20px 80px rgba(0,0,0,.55)}
+.bk-head{background:var(--gold-grad);color:#161104;padding:20px 26px;text-align:center}
+.bk-head .t{font-weight:900;font-size:clamp(16px,3vw,19px)}
+.bk-head .s{font-size:12px;font-weight:700;opacity:.85}
+.bk-body{padding:clamp(20px,4vw,36px)}
+.bk-step-label{display:flex;align-items:center;gap:10px;font-weight:900;font-size:15.5px;margin-bottom:16px}
+.bk-step-label .n{font-family:var(--font-en);background:var(--gold-grad);color:#161104;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-size:13px;font-weight:600}
+.bk-dates{display:flex;gap:8px;overflow-x:auto;padding-bottom:10px;scrollbar-width:thin}
+.bk-date{flex:0 0 74px;border:1px solid var(--line);border-radius:12px;padding:10px 4px;text-align:center;cursor:pointer;background:var(--black3);transition:border-color .2s,background .2s}
+.bk-date .dow{font-size:11px;color:var(--gray)}
+.bk-date .d{font-family:var(--font-en);font-size:20px;line-height:1.3}
+.bk-date .cnt{font-size:10.5px;color:var(--gold2)}
+.bk-date.sat .dow{color:#7fa6d9}.bk-date.sun .dow{color:#d98a8a}
+.bk-date.active{border-color:var(--gold);background:rgba(200,169,106,.14)}
+.bk-date.empty{opacity:.38;cursor:default}
+.bk-slots{display:grid;grid-template-columns:repeat(auto-fill,minmax(86px,1fr));gap:10px;margin-top:18px;min-height:52px}
+.bk-slot{border:1px solid var(--line);background:var(--black3);border-radius:10px;padding:10px 4px;text-align:center;font-family:var(--font-en);font-size:15px;cursor:pointer;color:#fff;transition:all .15s}
+.bk-slot:hover{border-color:var(--gold2)}
+.bk-slot.active{background:var(--gold-grad);color:#161104;font-weight:600;border-color:transparent}
+.bk-empty-msg{color:var(--gray);font-size:13.5px;grid-column:1/-1;align-self:center}
+.bk-form{margin-top:30px;display:grid;gap:16px}
+.bk-field label{display:block;font-size:13px;font-weight:700;margin-bottom:6px}
+.bk-field label .req{color:#161104;background:var(--gold2);font-size:10px;border-radius:4px;padding:1px 6px;margin-left:8px;vertical-align:1px}
+.bk-field input,.bk-field textarea{width:100%;background:var(--black3);border:1px solid var(--line);border-radius:10px;color:#fff;font-size:15px;padding:13px 14px;font-family:var(--font-ja);transition:border-color .2s}
+.bk-field input:focus,.bk-field textarea:focus{outline:none;border-color:var(--gold)}
+.bk-field textarea{min-height:84px;resize:vertical}
+.bk-selected{background:rgba(200,169,106,.1);border:1px dashed var(--gold);border-radius:10px;padding:14px 16px;font-size:14px;display:none}
+.bk-selected.show{display:block}
+.bk-selected b{color:var(--gold2)}
+.bk-submit{margin-top:8px;width:100%}
+.bk-policy{font-size:11.5px;color:var(--gray);text-align:center;margin-top:4px}
+.bk-msg{border-radius:10px;padding:14px 16px;font-size:13.5px;display:none;margin-top:14px}
+.bk-msg.err{display:block;background:rgba(217,108,108,.12);border:1px solid rgba(217,108,108,.5);color:#f0bcbc}
+.bk-msg.ok{display:block;background:rgba(118,190,128,.1);border:1px solid rgba(118,190,128,.45);color:#bfe6c5}
+.bk-done{text-align:center;padding:40px 10px;display:none}
+.bk-done.show{display:block}
+.bk-done .mark{width:74px;height:74px;border-radius:50%;background:var(--gold-grad);display:grid;place-items:center;margin:0 auto 20px;font-size:34px;color:#161104}
+.bk-done h3{font-size:21px;font-weight:900;margin-bottom:12px}
+.bk-done p{font-size:14px;color:#cfcfd4}
+.bk-fallback{text-align:center;margin-top:22px;font-size:12.5px;color:var(--gray)}
+.bk-fallback a{color:var(--gold2);text-decoration:underline}
+.bk-loading{display:flex;align-items:center;justify-content:center;gap:12px;color:var(--gray);font-size:13.5px;padding:24px 0}
+.spinner{width:18px;height:18px;border:2px solid var(--line);border-top-color:var(--gold);border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ---------- campaign bar ---------- */
+.campaign-bar{background:linear-gradient(90deg,rgba(200,169,106,.16),rgba(200,169,106,.06));border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);text-align:center;padding:13px 16px;font-size:clamp(13px,2.6vw,15px);font-weight:700;letter-spacing:.02em}
+.campaign-bar b{color:var(--gold2);font-weight:900}
+
+/* ---------- stats（実績の数字） ---------- */
+.stats{padding:clamp(26px,5vw,44px) 0}
+.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;max-width:560px;margin:0 auto}
+.stat{background:var(--black2);border:1px solid var(--line);border-radius:14px;padding:16px 6px 13px;text-align:center}
+.stat .l{font-size:11px;color:var(--gray);font-weight:700}
+.stat .n{font-family:var(--font-en);font-weight:600;color:var(--gold2);line-height:1;font-size:clamp(26px,7.6vw,40px);margin-top:5px}
+.stat .n .u{font-size:.36em;font-family:var(--font-ja);font-weight:700;color:var(--white);margin-left:1px}
+.stat .sup{font-size:9px;color:var(--gray);margin-top:5px}
+.stats-note{text-align:center;color:var(--gray);font-size:10.5px;line-height:1.9;margin-top:14px;max-width:600px;margin-left:auto;margin-right:auto;padding:0 16px}
+
+/* ---------- field help / line ---------- */
+.bk-help{font-size:11.5px;color:var(--gray);margin-top:6px;line-height:1.6}
+.bk-line{margin-top:26px;padding-top:24px;border-top:1px solid var(--line)}
+.bk-line-lead{font-size:13px;color:#cfcfd4;line-height:1.9;margin-bottom:16px}
+.bk-line-btn{display:inline-flex;align-items:center;gap:8px;background:#06C755;color:#fff;font-weight:900;padding:14px 36px;border-radius:999px;font-size:15px}
+.bk-line-qr{width:168px;height:168px;margin:18px auto 0;border-radius:12px;background:#fff;padding:8px;box-sizing:border-box}
+
+/* ---------- honeypot（Bot対策・人間には不可視） ---------- */
+.bk-hp{position:absolute!important;left:-9999px!important;top:auto;width:1px;height:1px;overflow:hidden}
+
+/* ---------- booking request (希望日時) ---------- */
+.bk-req{margin-top:18px;border:1px dashed var(--line);border-radius:12px;overflow:hidden}
+.bk-req-toggle{width:100%;background:var(--black3);border:none;color:#fff;font-family:var(--font-ja);text-align:left;padding:14px 16px;cursor:pointer;display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:13.5px;line-height:1.5}
+.bk-req-toggle span{color:var(--gray)}
+.bk-req-toggle b{color:var(--gold2);font-weight:700}
+.bk-req-toggle i{margin-left:auto;font-style:normal;color:var(--gold);font-family:var(--font-en);font-size:20px;transition:transform .2s}
+.bk-req-toggle[aria-expanded="true"] i{transform:rotate(45deg)}
+.bk-req-body{padding:18px 16px;display:grid;gap:14px}
+.bk-req-note{font-size:12.5px;color:var(--gray);line-height:1.8}
+.bk-req-note b{color:var(--gold2)}
+.bk-req-time{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.bk-req-body select{width:100%;background:var(--black3);border:1px solid var(--line);border-radius:10px;color:#fff;font-size:15px;padding:13px 14px;font-family:var(--font-ja)}
+.bk-req-done{text-align:center;padding:22px 6px}
+.bk-req-done .mk{width:54px;height:54px;border-radius:50%;background:var(--gold-grad);color:#161104;display:grid;place-items:center;font-size:26px;margin:0 auto 12px}
+.bk-req-done h4{font-size:17px;font-weight:900;margin-bottom:8px}
+.bk-req-done p{font-size:13px;color:#cfcfd4;line-height:1.9}
+
+/* ---------- footer / sticky ---------- */
+footer{background:#070708;border-top:1px solid var(--line);padding:56px 0 140px;font-size:12.5px;color:var(--gray)}
+footer .flogo{height:30px;width:auto;margin:0 auto 26px}
+footer .fnotes{max-width:820px;margin:0 auto 30px;line-height:2;font-size:11px}
+footer .links{text-align:center;margin-bottom:18px}
+footer .links a{margin:0 12px;text-decoration:underline}
+footer .copy{text-align:center;font-family:var(--font-en);letter-spacing:.1em;font-size:11px}
+.sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:90;display:flex;gap:10px;padding:12px 14px calc(12px + env(safe-area-inset-bottom));background:rgba(11,11,13,.9);backdrop-filter:blur(12px);border-top:1px solid var(--line);transform:translateY(110%);transition:transform .35s}
+.sticky-cta.show{transform:translateY(0)}
+.sticky-cta .tel{flex:0 0 auto;display:grid;place-items:center;border:1px solid var(--line);border-radius:12px;padding:0 18px;font-size:13px;font-weight:700}
+.sticky-cta .main{flex:1;background:var(--gold-grad);color:#161104;font-weight:900;border-radius:12px;display:grid;place-items:center;padding:13px 8px;font-size:15px;text-align:center}
+.sticky-cta .main small{display:block;font-size:10.5px;font-weight:700}
+
+/* ---------- reveal animation ---------- */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.rv.on{opacity:1;transform:none}
+</style>
+</head>
+<body>
+<div style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#b3261e;color:#fff;text-align:center;font-size:11.5px;font-weight:700;padding:6px 10px;letter-spacing:.04em;line-height:1.5">
+社内確認用プレビュー（ダーク基調案・予約はデモ動作で実際には入りません）　<a href="light.html" style="color:#ffe08a;text-decoration:underline;white-space:nowrap">白基調案を見る →</a>
+</div>
+<script>window.PREVIEW_DEMO = true;</script>
+<div style="height:34px"></div>
+
+<header id="header">
+  <a class="logo" href="#top">
+    <img src="assets/logo-w.png" alt="BEYOND">
+    <span>春日井店</span>
+  </a>
+  <a class="btn-head" href="#reserve">無料体験を予約</a>
+</header>
+
+<!-- ================= HERO ================= -->
+<div class="hero" id="top">
+  <div class="wrap">
+    <span class="hero-tag en">結果で選ぶ — 春日井のパーソナルジム</span>
+    <h1>最短3ヶ月で、<br>なりたい<span class="gold">自分へ。</span></h1>
+    <p class="sub">自己流も、安いジムも続かなかった——。糖質制限なしで“結果”を出すプロが、あなた専属で理想の体まで導きます。</p>
+    <div class="hero-points">
+      <span>体験ﾄﾚｰﾆﾝｸﾞ <b>無料</b></span>
+      <span>入会金 <b>0円</b></span>
+      <span>手ぶら<b>OK</b></span>
+      <span>無料<b>駐車場完備</b></span>
+    </div>
+    <div class="hero-cta">
+      <a class="btn-main" href="#reserve">空き枠を見て無料体験を予約<small>Webで完結・所要1分</small></a>
+      <a class="btn-ghost" href="tel:0568840340">📞 0568-84-0340</a>
+    </div>
+    <p class="slot-note" id="heroSlotNote"></p>
+  </div>
+</div>
+
+<!-- ================= CAMPAIGN BAR ================= -->
+<div class="campaign-bar">🎁 今なら<b>入会金0円</b>　＋　体験トレーニングも<b>無料</b></div>
+
+<!-- ================= STATS ================= -->
+<section class="stats">
+  <div class="wrap">
+    <div class="sec-head rv" style="margin-bottom:22px">
+      <span class="en-label">Record</span>
+      <h2>数字で見る、<em>BEYONDの信頼</em></h2>
+    </div>
+    <div class="stats-grid rv">
+      <div class="stat"><div class="l">継続率</div><div class="n">93<span class="u">%</span></div><div class="sup">※1</div></div>
+      <div class="stat"><div class="l">全国</div><div class="n">170<span class="u">店舗+</span></div><div class="sup">※2</div></div>
+      <div class="stat"><div class="l">累計会員</div><div class="n">3<span class="u">万人+</span></div><div class="sup">※3</div></div>
+    </div>
+    <p class="stats-note rv">※1 初回セッションから2ヶ月間継続して通われた方の割合／※2 2024年10月時点／※3 2021年〜2024年10月の累計入会者数。いずれもパーソナルジムBEYOND全店舗の実績です。</p>
+  </div>
+</section>
+
+<!-- ================= TRUST ================= -->
+<div class="trust">
+  <div class="wrap trust-grid">
+    <div class="t-item">
+      <div class="t-icon"><svg viewBox="0 0 24 24"><path d="M7 4h10v5a5 5 0 0 1-10 0V4z"/><path d="M7 5H4a3 3 0 0 0 3.2 4.6M17 5h3a3 3 0 0 1-3.2 4.6"/><path d="M12 14v4M8 21h8M9 21c0-2 1-3 3-3s3 1 3 3"/></svg></div>
+      <div class="t-title"><span class="en">BEST GYM AWARD</span><br>2020 受賞ブランド</div>
+      <div class="t-sub">全国に展開する<br>パーソナルジムBEYOND ※1</div>
+    </div>
+    <div class="t-item">
+      <div class="t-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
+      <div class="t-title">年中無休<br><span class="en">10:00 - 22:00</span></div>
+      <div class="t-sub">仕事帰りでも、休日でも。<br>生活に合わせて通えます</div>
+    </div>
+    <div class="t-item">
+      <div class="t-icon"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9.5 16.5V7.5h3.6a2.8 2.8 0 0 1 0 5.6H9.5"/></svg></div>
+      <div class="t-title">無料駐車場つき<br>手ぶらで<span class="en">OK</span></div>
+      <div class="t-sub">ウェアもタオルもお水も、<br>すべて無料</div>
+    </div>
+    <div class="t-item">
+      <div class="t-icon"><svg viewBox="0 0 24 24"><circle cx="8.5" cy="7.5" r="2.8"/><path d="M3.5 19.5c0-3.1 2.2-5.1 5-5.1s5 2 5 5.1"/><circle cx="16.8" cy="9.3" r="2.2"/><path d="M15 19.5c.3-2.5 1.8-4 3.9-4 1.6 0 2.9.8 3.6 2.1"/></svg></div>
+      <div class="t-title">完全<br>マンツーマン</div>
+      <div class="t-sub">周りの目を気にせず、<br>あなただけの空間で集中</div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= WORRIES ================= -->
+<section>
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="en-label">Your Concerns</span>
+      <h2>なぜ、今までは<em>続かなかった</em>のか。</h2>
+    </div>
+    <div class="worries-box rv">
+      <ul>
+        <li>安さで選んだジムで、結局ひとりで頑張れず辞めてしまった</li>
+        <li>自己流の食事制限で、痩せてもすぐにリバウンドした</li>
+        <li>マシンの使い方が分からないまま、なんとなく通って終わった</li>
+        <li>動画や本で勉強しても、自分に合っているか確信が持てない</li>
+        <li>今度こそ、お金と時間を無駄にせず“結果”を出したい</li>
+      </ul>
+    </div>
+    <div class="rv">
+      <div class="arrow-down"></div>
+      <p class="worries-answer">続かなかったのは、あなたの意志のせいではありません。<br><em>正しいやり方と、結果を出す仕組み</em>がなかっただけです。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONCEPT ================= -->
+<section id="concept" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="en-label">Concept</span>
+      <h2>痩せた、<em>その先へ。</em></h2>
+    </div>
+    <p class="concept-state rv">BEYONDが目指すのは、体重計の数字を減らすだけのダイエットではありません。<br>痩せたその先にある<b>「カッコいい体・美しい体」</b>。<br>そのために必要なのは我慢ではなく、<b>一生使える正しいトレーニングと食事の知識</b>です。</p>
+    <div class="concept-grid rv">
+      <div class="c-card">
+        <div class="c-num en">01</div>
+        <h4>極端な糖質制限を<br><em>しない</em></h4>
+        <p>つらい制限はリバウンドのもと。BEYONDは食べながら整えるスタイル。コンビニや外食とも両立できる食べ方を、あなたの生活に合わせて提案します。</p>
+      </div>
+      <div class="c-card">
+        <div class="c-num en">02</div>
+        <h4>知識と習慣が<br><em>身につく</em></h4>
+        <p>メニューをこなすだけでは終わらせません。「なぜこれが効くのか」まで毎回お伝えするので、自分の体を自分で管理できるようになります。</p>
+      </div>
+      <div class="c-card">
+        <div class="c-num en">03</div>
+        <h4>卒業しても、<br><em>理想の自分</em></h4>
+        <p>ジムに通い続けないと保てない体ではなく、卒業後もひとりで維持できる体づくりへ。だから通った時間が、一生の財産になります。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURES ================= -->
+<section id="reasons" style="background:var(--black2)">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="en-label">Why BEYOND</span>
+      <h2>“結果”が出るのには、<br><em>理由があります。</em></h2>
+    </div>
+
+    <div class="feature rv">
+      <div class="f-img"><img src="assets/feature-training.jpg" alt="大会入賞実績のあるトレーナーによる指導" loading="lazy"></div>
+      <div class="f-body">
+        <div class="f-num en">01</div>
+        <h3>自ら“結果”を出してきた、<br><em>実績あるトレーナーだけ。</em></h3>
+        <p>春日井店には、ボディメイク大会で入賞・優勝した実績を持つトレーナーが在籍。全国展開するBEYONDの厳しい採用選考を通過したプロだけが指導にあたります。「自分の体を変えてきた人」だから、あなたの体の変え方も分かる。“なんとなく追い込む”指導とは、結果が違います。</p>
+      </div>
+    </div>
+
+    <div class="feature rev rv">
+      <div class="f-img"><img src="assets/counseling.jpg" alt="カウンセリングの様子" loading="lazy"></div>
+      <div class="f-body">
+        <div class="f-num en">02</div>
+        <h3>我慢で痩せない。<br><em>リバウンドしない食事戦略。</em></h3>
+        <p>自己流の食事制限が続かないのは、つらいから。BEYONDは極端な糖質カットや絶食をすすめません。コンビニや外食もOKな「続けられる食べ方」を設計し、痩せて終わりではなく“戻らない体”へ。卒業後も役立つ、一生モノの食の知識が手に入ります。</p>
+        <p class="note">※食事管理サポートはライフプランニングコースに含まれます。</p>
+      </div>
+    </div>
+
+    <div class="feature rv">
+      <div class="f-img"><img src="assets/feature-personal.jpg" alt="初心者へのフォーム指導" loading="lazy"></div>
+      <div class="f-body">
+        <div class="f-num en">03</div>
+        <h3>挫折させない、<br><em>“続く”仕組み。</em></h3>
+        <p>通うお客様の多くは運動初心者。フォームはゼロから丁寧にお教えするので経験は不要です。完全マンツーマンであなた専用にメニューを設計し、ひとりにしません。ウェア・タオル・お水は無料、手ぶらでOK。年中無休・無料駐車場で、“通い続けられる”から結果につながります。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BEFORE / AFTER ================= -->
+<section>
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="en-label">Results</span>
+      <h2>本気で取り組めば、<br><em>体は応える。</em></h2>
+    </div>
+    <div class="ba-grid rv">
+      <div class="ba-card single">
+        <div class="ba-imgs"><img src="assets/ba1.jpg" alt="女性のビフォーアフター事例" loading="lazy"></div>
+        <div class="ba-caption">30代女性／ウエスト周りを引き締めながら、メリハリのあるボディラインへ。</div>
+      </div>
+      <div class="ba-card">
+        <div class="ba-imgs">
+          <div class="half"><img src="assets/ba3-before.jpg" alt="男性ビフォー" loading="lazy"><span class="tag">BEFORE</span></div>
+          <div class="half after"><img src="assets/ba3-after.jpg" alt="男性アフター" loading="lazy"><span class="tag">AFTER</span></div>
+        </div>
+        <div class="ba-caption">30代男性／食事と運動の習慣化で、引き締まった体づくりを実現。</div>
+      </div>
+    </div>
+    <p class="ba-disclaimer rv">※掲載しているのはBEYOND各店のお客様の一例です。成果を保証するものではなく、結果には個人差があります。<br>適切なトレーニングと食事管理を継続した場合の事例です。</p>
+  </div>
+</section>
+
+<!-- ================= MEDIA ================= -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="en-label">Media</span>
+      <h2>雑誌で見た、<em>あのジム。</em></h2>
+    </div>
+    <div class="rv" style="display:flex;justify-content:center;gap:18px;flex-wrap:wrap;align-items:flex-start">
+      <img src="assets/media-anan.jpg" alt="anan掲載" style="width:120px;border-radius:8px" loading="lazy">
+      <img src="assets/media-tarzan.jpg" alt="Tarzan掲載" style="width:120px;border-radius:8px" loading="lazy">
+      <img src="assets/media-goethe.jpg" alt="GOETHE掲載" style="width:120px;border-radius:8px" loading="lazy">
+      <img src="assets/media-tokyocal.jpg" alt="東京カレンダー掲載" style="width:120px;border-radius:8px" loading="lazy">
+      <img src="assets/media-ironman.jpg" alt="IRON MAN掲載" style="width:120px;border-radius:8px" loading="lazy">
+    </div>
+    <p class="ba-disclaimer rv">※BEYONDブランドとしての掲載実績です（anan 2015年4月号／Tarzan 2019年4月号／GOETHE 2020年4月号／東京カレンダー 2019年11月号／IRON MAN 2017年3月号）。</p>
+  </div>
+</section>
+
+<!-- ================= PRICE ================= -->
+<section id="price" style="background:var(--black2)">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="en-label">Price</span>
+      <h2>まずは<em>無料</em>で、<br>確かめてください。</h2>
+    </div>
+
+    <div class="price-trial rv">
+      <span class="badge">初回限定</span>
+      <h3>体験トレーニング＋カウンセリング</h3>
+      <div class="zero en">¥0<small>（税込）</small></div>
+      <p>体の悩み・目標のヒアリングと、マンツーマンの体験トレーニング。<br>ウェア・シューズ・タオル無料レンタルで手ぶらでどうぞ。無理な勧誘は行いません。</p>
+      <ul class="trial-gets">
+        <li>プロによるマンツーマンの体験トレーニング</li>
+        <li>体の悩みと目標を整理するカウンセリング</li>
+        <li><b>あなた専用のダイエット・ボディメイクプランを無料プレゼント</b></li>
+      </ul>
+      <div style="margin-top:22px"><a class="btn-main" href="#reserve">無料体験の空き枠を見る<small>カンタン1分で予約完了</small></a></div>
+    </div>
+
+    <div class="price-table-wrap rv">
+      <table class="price-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>回数券</th>
+            <th class="reco">ライフプランニング<span class="pop">おすすめ</span></th>
+            <th>マンスリー</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="rowlabel">料金<br>(税込)</td>
+            <td><span class="amt">¥102,300</span><br>〜</td>
+            <td><span class="amt">¥290,400</span><br>〜</td>
+            <td><span class="amt">¥17,600</span><br>〜/月</td>
+          </tr>
+          <tr>
+            <td class="rowlabel">回数<br>期間</td>
+            <td>10〜30回<br>期限内自由</td>
+            <td>16回/2ヶ月<br>24回/3ヶ月</td>
+            <td>月2・4・8回</td>
+          </tr>
+          <tr>
+            <td class="rowlabel">食事<br>サポート</td>
+            <td>—</td>
+            <td><span class="yes">◎</span></td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td class="rowlabel">こんな<br>方に</td>
+            <td>自分の<br>ペースで</td>
+            <td>短期集中で<br>変えたい</td>
+            <td>卒業後の<br>維持に</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="price-notes rv">
+      ＜回数券＞STANDARD 10回 ¥102,300／ACHIEVE 20回 ¥187,000／BEYOND 30回 ¥264,000　＜ライフプランニング＞16回・2ヶ月 ¥290,400／24回・3ヶ月 ¥435,600　＜マンスリー＞月2回 ¥17,600／月4回 ¥35,200／月8回 ¥69,300<br>
+      ※価格はすべて税込です。プラン内容・価格は変更となる場合があります。最新の情報は店舗またはBEYOND公式サイトでご確認ください。<br>
+      ※クレジットカードによる分割払いに最大60回まで対応しています。分割回数に応じて月々のお支払いを調整できます（手数料は当社指定信販会社の規定によります）。<br>
+      ※入会金0円。体験当日のご入会を強制するものではありません。
+    </p>
+  </div>
+</section>
+
+<!-- ================= STORE ================= -->
+<section id="access">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="en-label">Studio</span>
+      <h2>春日井店の、<em>実際の空間。</em></h2>
+    </div>
+    <p class="sec-lead rv">こちらはすべてBEYOND春日井店の実際の写真です。明るく清潔な店内で、周りの目を気にせずトレーニングに集中できます。</p>
+    <div class="gym-gallery rv">
+      <div class="g1"><img src="assets/store-gym1.jpg" alt="BEYOND春日井店 トレーニングルーム" loading="lazy"></div>
+      <div><img src="assets/store-gym2.jpg" alt="BEYOND春日井店 マシン設備" loading="lazy"></div>
+      <div><img src="assets/store-entrance.jpg" alt="BEYOND春日井店 入口" loading="lazy"></div>
+      <div><img src="assets/store-shower.jpg" alt="BEYOND春日井店 シャワー・パウダールーム" loading="lazy"></div>
+      <div><img src="assets/store-ext.jpg" alt="BEYOND春日井店 外観" loading="lazy"></div>
+    </div>
+    <div class="store-info rv">
+      <div>
+        <h3>BEYOND 春日井店</h3>
+        <dl>
+          <dt>住所</dt><dd>〒486-0844 愛知県春日井市鳥居松町4-122<br>王子不動産名古屋ビル 1階</dd>
+          <dt>アクセス</dt><dd>バス停「鳥居松」徒歩3分<br>JR中央本線「春日井駅」車で3分<br><small>無料駐車場・駐輪場あり／お車での来店OK</small></dd>
+          <dt>営業時間</dt><dd>10:00〜22:00（年中無休）</dd>
+          <dt>電話</dt><dd><a href="tel:0568840340" style="color:var(--gold2)">0568-84-0340</a></dd>
+        </dl>
+        <div class="amenities">
+          <span>無料駐車場</span><span>シャワー</span><span>ロッカー</span><span>Wi-Fi</span><span>ウェア・シューズ無料</span><span>タオル</span><span>ミネラルウォーター</span><span>プロテイン</span>
+        </div>
+      </div>
+      <div>
+        <div class="store-map">
+          <iframe src="https://www.google.com/maps?q=%E6%84%9B%E7%9F%A5%E7%9C%8C%E6%98%A5%E6%97%A5%E4%BA%95%E5%B8%82%E9%B3%A5%E5%B1%85%E6%9D%BE%E7%94%BA4-122&output=embed" loading="lazy" title="BEYOND春日井店の地図"></iframe>
+        </div>
+        <p style="margin-top:10px;text-align:right;font-size:12.5px"><a href="https://www.google.com/maps/search/?api=1&query=%E6%84%9B%E7%9F%A5%E7%9C%8C%E6%98%A5%E6%97%A5%E4%BA%95%E5%B8%82%E9%B3%A5%E5%B1%85%E6%9D%BE%E7%94%BA4-122" target="_blank" rel="noopener" style="color:var(--gold2);text-decoration:underline">Googleマップで開く →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRAINERS ================= -->
+<section id="trainers" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="en-label">Trainers</span>
+      <h2>はじめまして。<br><em>春日井店のトレーナーです。</em></h2>
+    </div>
+    <p class="sec-lead rv">全員が、大会で結果を出し、厳しい採用選考を通過したプロ。自分の体を本気で変えてきたからこそ、あなたの“結果”にも本気で向き合います。</p>
+    <div class="trainer-grid rv">
+      <div class="trainer-card">
+        <img src="assets/trainer-tsuda.jpg" alt="店長 津田誠真" loading="lazy">
+        <div class="tc-body">
+          <span class="tc-role">Manager</span>
+          <h4>津田 誠真<small style="font-weight:400;font-size:11px;color:var(--gray)">（店長）</small></h4>
+          <ul>
+            <li>BEST BODY JAPAN 2023 名古屋大会 第3位</li>
+            <li>BEST BODY JAPAN 2023 日本大会 出場</li>
+          </ul>
+        </div>
+      </div>
+      <div class="trainer-card">
+        <img src="assets/trainer-tatara.jpg" alt="トレーナー 多々良明登" loading="lazy">
+        <div class="tc-body">
+          <span class="tc-role">Trainer</span>
+          <h4>多々良 明登</h4>
+          <ul>
+            <li>FWJ 2024 東京 入賞</li>
+            <li>FWJ 2024 愛知 出場</li>
+          </ul>
+        </div>
+      </div>
+      <div class="trainer-card">
+        <img src="assets/trainer-ito.jpg" alt="トレーナー 伊藤雅祥" loading="lazy">
+        <div class="tc-body">
+          <span class="tc-role">Trainer</span>
+          <h4>伊藤 雅祥</h4>
+          <ul>
+            <li>NSCA-CPT（全米ストレングス＆コンディショニング協会 認定パーソナルトレーナー）</li>
+          </ul>
+        </div>
+      </div>
+      <div class="trainer-card">
+        <img src="assets/trainer-sakairi.jpg" alt="トレーナー 坂入真幸" loading="lazy">
+        <div class="tc-body">
+          <span class="tc-role">Trainer</span>
+          <h4>坂入 真幸</h4>
+          <ul>
+            <li>マッスルゲート大阪大会 優勝</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="trainer-note rv">※在籍トレーナー・実績は2026年6月時点（BEYOND春日井店 公式ページより）。担当トレーナーは体験時にご相談いただけます。</p>
+  </div>
+</section>
+
+<!-- ================= FLOW ================= -->
+<section style="background:var(--black2)">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="en-label">Flow</span>
+      <h2>当日は、<em>この4ステップだけ。</em></h2>
+    </div>
+    <div class="flow-grid rv">
+      <div class="flow-card"><span class="step en">STEP 1</span><h4>Web予約</h4><p>このページの空き枠カレンダーから、ご希望の日時を選んで1分で予約完了。</p></div>
+      <div class="flow-card"><span class="step en">STEP 2</span><h4>カウンセリング</h4><p>現在のお悩みや目標、生活リズムを丁寧にヒアリング。着替えのご用意は不要です。</p></div>
+      <div class="flow-card"><span class="step en">STEP 3</span><h4>体験トレーニング</h4><p>あなたの体力に合わせたマンツーマントレーニングを実際に体験。「効く」感覚を実感してください。</p></div>
+      <div class="flow-card"><span class="step en">STEP 4</span><h4>専用プランのお渡し</h4><p>カウンセリングと体験をもとに、あなた専用のダイエット・ボディメイクプランをご提案。入会の強制はありません。</p></div>
+    </div>
+    <p class="flow-time rv">持ち物は不要。手ぶらでお越しいただけます。</p>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="en-label">FAQ</span>
+      <h2>よくある<em>ご質問</em></h2>
+    </div>
+    <div class="faq rv">
+      <details>
+        <summary>運動経験がまったくなくても大丈夫ですか？</summary>
+        <div class="a">はい、まったく問題ありません。BEYONDに通われるお客様の多くは運動初心者です。マシンの使い方やフォームはゼロから丁寧にお教えしますので、安心してお越しください。</div>
+      </details>
+      <details>
+        <summary>体験当日は何を持っていけばいいですか？</summary>
+        <div class="a">手ぶらでOKです。ウェア・シューズ・タオル・ミネラルウォーターはすべて無料でご用意しています。シャワー・ロッカーも完備しています。</div>
+      </details>
+      <details>
+        <summary>厳しい食事制限はありますか？</summary>
+        <div class="a">BEYONDでは極端な糖質制限や絶食は行いません。お仕事や外食の予定とも両立できる「続けられる食事」を、一人ひとりのライフスタイルに合わせてご提案します。リバウンドしにくい習慣づくりが目的です。</div>
+      </details>
+      <details>
+        <summary>車で通えますか？</summary>
+        <div class="a">はい。店舗前に無料駐車場・駐輪場を完備していますので、お車・自転車でのご来店も可能です。</div>
+      </details>
+      <details>
+        <summary>体験に行ったら、その場で入会しないといけませんか？</summary>
+        <div class="a">いいえ。無理な勧誘は行っておりません。体験とカウンセリングの内容をもとに、ご自宅でじっくりご検討いただけます。</div>
+      </details>
+      <details>
+        <summary>支払い方法は何がありますか？</summary>
+        <div class="a">各種クレジットカードがご利用いただけます。分割払い（最大60回）にも対応していますので、詳しくはカウンセリングでお気軽にご相談ください。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BOOKING ================= -->
+<section id="reserve">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="en-label">Reservation</span>
+      <h2>無料体験トレーニング<br><em>Web予約</em></h2>
+    </div>
+    <p class="sec-lead rv">カレンダーに並ぶのは、いま本当に空いている枠だけ。<br>気になる日時を選んで、お名前とご連絡先を入れたら完了です。<b style="color:var(--gold2)">所要、約1分。</b></p>
+
+    <div class="bk-box rv">
+      <div class="bk-head">
+        <div class="t">BEYOND 春日井店<br>無料体験 予約フォーム</div>
+        <div class="s">体験0円・手ぶらOK／あなた専用プランをプレゼント</div>
+      </div>
+      <div class="bk-body">
+        <div id="bkMain">
+          <div class="bk-step-label"><span class="n">1</span>ご希望の日付を選択</div>
+          <div class="bk-dates" id="bkDates"></div>
+          <div class="bk-step-label" style="margin-top:26px"><span class="n">2</span>ご希望の時間を選択</div>
+          <div class="bk-slots" id="bkSlots"><div class="bk-loading"><span class="spinner"></span>空き枠を読み込んでいます…</div></div>
+
+          <div class="bk-req">
+            <button type="button" class="bk-req-toggle" id="bkReqToggle" aria-expanded="false">
+              <span>ご希望の時間が見つかりませんか？</span><b>希望の日時を送る</b><i>＋</i>
+            </button>
+            <div class="bk-req-body" id="bkReqBody" hidden>
+              <p class="bk-req-note">空き枠に表示がない日時でも、ご希望をお送りいただけます。下記で日時を選び、<b>そのまま下の「お客様情報」を入力してお申し込みください。</b>店舗が空き状況を確認し折り返します（この時点では予約は確定しません）。</p>
+              <div class="bk-field">
+                <label>ご希望日<span class="req">必須</span></label>
+                <input type="date" id="bkReqDate">
+              </div>
+              <div class="bk-req-time">
+                <div class="bk-field">
+                  <label>ご希望時刻<span class="req">必須</span></label>
+                  <select id="bkReqHour"><option value="" disabled selected>時</option></select>
+                </div>
+                <div class="bk-field">
+                  <label>&nbsp;</label>
+                  <select id="bkReqMin"><option value="00">00分</option><option value="30">30分</option></select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="bk-form" id="bkForm" autocomplete="on">
+            <div class="bk-step-label" style="margin-bottom:0"><span class="n">3</span>お客様情報を入力</div>
+            <div class="bk-selected" id="bkSelected"></div>
+            <div class="bk-field">
+              <label>お名前<span class="req">必須</span></label>
+              <input type="text" id="bkName" name="name" placeholder="例）山田 花子" required>
+            </div>
+            <div class="bk-field">
+              <label>電話番号<span class="req">必須</span></label>
+              <input type="tel" id="bkPhone" name="tel" placeholder="例）090-1234-5678" required inputmode="tel">
+            </div>
+            <div class="bk-field">
+              <label>メールアドレス<span class="req">必須</span></label>
+              <input type="email" id="bkEmail" name="email" placeholder="例）example@email.com" required inputmode="email">
+              <p class="bk-help">📩 ご入力のアドレスに、ご予約・ご希望受付の確認メールをお送りします。<br>携帯メールの場合は「@tr-beyond.jp」からのメールを受信できるようご設定ください。</p>
+            </div>
+            <div class="bk-field">
+              <label>ご質問・ご相談（任意）</label>
+              <textarea id="bkNote" placeholder="例）産後のダイエットについて相談したい／腰痛があるので配慮してほしい など"></textarea>
+            </div>
+            <div class="bk-hp" aria-hidden="true"><label>このフィールドは入力しないでください<input type="text" id="bkHp" name="company" tabindex="-1" autocomplete="off"></label></div>
+            <button type="submit" class="btn-main bk-submit" id="bkSubmit">この内容で無料体験を予約する<small>送信後すぐに予約が確定します</small></button>
+            <p class="bk-policy">送信いただいた情報は、ご予約の管理とご連絡のみに使用します。</p>
+            <div class="bk-msg" id="bkMsg"></div>
+          </form>
+        </div>
+
+        <div class="bk-done" id="bkDone">
+          <div class="mark">✓</div>
+          <h3 id="bkDoneTitle">ご予約ありがとうございます！</h3>
+          <p id="bkDoneDetail"></p>
+          <p id="bkDoneSub" style="margin-top:14px">当日は手ぶらでOK。スタッフ一同、お会いできるのを楽しみにしています。<br>ご都合が悪くなった場合は <a href="tel:0568840340" style="color:var(--gold2)">0568-84-0340</a> までご連絡ください。</p>
+          <div class="bk-line" id="bkLine" hidden>
+            <p class="bk-line-lead">当日のご相談や、空き状況のご連絡は<b style="color:#06C755">公式LINE</b>がスムーズです。<br>下のボタンから友だち追加してお待ちください。</p>
+            <a class="bk-line-btn" id="bkLineBtn" href="#" target="_blank" rel="noopener">＋ LINEで友だち追加</a>
+            <img class="bk-line-qr" id="bkLineQr" alt="LINE友だち追加QRコード" hidden>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="bk-fallback rv">フォームがうまく動作しない場合は <a href="https://calyn-transce.vercel.app/booking/kasugai" target="_blank" rel="noopener">こちらの予約ページ</a>、またはお電話（<a href="tel:0568840340">0568-84-0340</a>）でご予約ください。</p>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <img class="flogo" src="assets/logo-w-text.png" alt="BEYOND">
+    <div class="fnotes">
+      ※1 BEST GYM AWARD 2020はBEYONDブランドとしての受賞です。<br>
+      ※掲載のビフォーアフター写真はBEYOND各店のお客様の一例であり、効果を保証するものではありません。結果には個人差があります。<br>
+      ※料金はすべて税込表示です。プラン内容・価格・営業時間は変更となる場合があります。最新情報は店舗までお問い合わせください。
+    </div>
+    <div class="links">
+      <a href="https://beyond-gym.com/" target="_blank" rel="noopener">BEYOND公式サイト</a>
+      <a href="https://beyond-gym.com/gym/gym-kasugai/" target="_blank" rel="noopener">春日井店 店舗ページ</a>
+      <a href="https://transce.jp/privacy-policy" target="_blank" rel="noopener">プライバシーポリシー</a>
+    </div>
+    <div style="text-align:center;font-size:11.5px;line-height:2;margin-bottom:18px">
+      運営会社：トランス株式会社（BEYOND春日井店）<br>
+      〒101-0041 東京都千代田区神田須田町2-19-23 Daiwa秋葉原ビル9階<br>
+      代表者：矢島慎也
+    </div>
+    <p class="copy">© BEYOND KASUGAI — PERSONAL TRAINING GYM</p>
+  </div>
+</footer>
+
+<!-- ================= STICKY CTA ================= -->
+<div class="sticky-cta" id="stickyCta">
+  <a class="tel" href="tel:0568840340">📞 電話</a>
+  <a class="main" href="#reserve">無料体験を予約する<small id="stickySlotNote">空き枠からカンタン1分</small></a>
+</div>
+
+<script>
+/* ====== Calyn 予約API設定 ====== */
+const CALYN_BASE = "https://calyn-transce.vercel.app";
+const CALYN_API_KEY = "calyn_pub_5721fee974e84524944bbec69b27b4db17b22cf0fbe26429";
+const CALYN_STORE_ID = "cmojsvm65000104k3wngbt0vz"; // BEYOND春日井店
+const DAYS_AHEAD = 14;
+const LINE_ADD_URL = ""; // 店舗LINE公式アカウントの友だち追加URL（例 https://lin.ee/xxxx）。空なら予約後のLINE案内を非表示
+const LINE_QR_SRC = "assets/line-qr.png"; // LINE友だち追加QR画像（任意）。ファイルが無ければ自動で非表示
+
+/* ====== Bot対策トークン（署名付き・ユーザー不可視。ページ読込時に取得し裏で自動更新） ====== */
+let FORM_TOKEN = null;
+async function refreshFormToken() {
+  try {
+    const r = await fetch(`${CALYN_BASE}/api/public/form-token?apiKey=${encodeURIComponent(CALYN_API_KEY)}`);
+    if (r.ok) { const d = await r.json(); FORM_TOKEN = d.token || null; }
+  } catch (e) { /* 取得失敗時は素通り（サーバー側がフェイルオープン） */ }
+}
+refreshFormToken();
+addEventListener('focus', () => { if (!document.hidden) refreshFormToken(); });
+setInterval(refreshFormToken, 30 * 60 * 1000);
+
+/**
+ * 公開APIへのPOST（Bot対策トークン添付＋失効時の自動リトライ込み）。
+ * PREVIEW_DEMO時は実送信せずダミー成功を返す。
+ * 返り値: { res:{ok}, data }
+ */
+async function submitPublic(path, payload) {
+  if (window.PREVIEW_DEMO) return { res: { ok: true }, data: { ok: true } };
+  const send = () => fetch(`${CALYN_BASE}${path}`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ ...payload, formToken: FORM_TOKEN }),
+  });
+  let res = await send();
+  let data = await res.json().catch(() => ({}));
+  // トークン失効/速すぎ/欠落なら、裏でトークンを取り直し（速すぎ判定を超えるため少し待って）1回だけ再送信
+  if (!res.ok && typeof data.error === 'string' && data.error.indexOf('FORM_TOKEN_') === 0) {
+    await refreshFormToken();
+    await new Promise(r => setTimeout(r, 2200));
+    res = await send();
+    data = await res.json().catch(() => ({}));
+  }
+  return { res, data };
+}
+
+/* ====== header / sticky / reveal ====== */
+const header = document.getElementById('header');
+const sticky = document.getElementById('stickyCta');
+addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', scrollY > 40);
+  const reserve = document.getElementById('reserve');
+  const inReserve = scrollY + innerHeight > reserve.offsetTop + 200;
+  sticky.classList.toggle('show', scrollY > innerHeight * 0.6 && !inReserve);
+}, { passive: true });
+
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); }
+}), { threshold: 0.12 });
+document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+/* ====== ページ内リンクのスムーススクロール（CSSのsmoothはハッシュ着地を壊すためJSで実装） ====== */
+document.addEventListener('click', e => {
+  const a = e.target.closest('a[href^="#"]');
+  if (!a) return;
+  const target = document.getElementById(a.getAttribute('href').slice(1));
+  if (!target) return;
+  e.preventDefault();
+  const before = scrollY;
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  target.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth' });
+  history.replaceState(null, '', a.getAttribute('href'));
+  setTimeout(() => { if (Math.abs(scrollY - before) < 2) target.scrollIntoView(); }, 250); // smooth未対応環境の保険
+});
+
+/* ====== 電話タップのCV計測 ====== */
+document.querySelectorAll('a[href^="tel:"]').forEach(a =>
+  a.addEventListener('click', () => trackCV('call')));
+
+/* ====== 広告流入元(UTM)を予約メモに引き継ぐ ====== */
+const UTM = (() => {
+  const p = new URLSearchParams(location.search);
+  const v = k => (p.get(k) || '').slice(0, 60);
+  return { s: v('utm_source'), m: v('utm_medium'), c: v('utm_campaign') };
+})();
+function utmSuffix() {
+  return UTM.s ? `／流入:${[UTM.s, UTM.m, UTM.c].filter(Boolean).join('/')}` : '';
+}
+
+/* ====== booking widget ====== */
+const fmtDate = d => `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+const DOW = ['日','月','火','水','木','金','土'];
+const jstParts = iso => {
+  const dt = new Date(iso);
+  const p = new Intl.DateTimeFormat('ja-JP', { timeZone:'Asia/Tokyo', year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit', weekday:'short', hour12:false }).formatToParts(dt);
+  const g = t => p.find(x => x.type === t)?.value ?? '';
+  return { dateKey:`${g('year')}-${g('month')}-${g('day')}`, m:+g('month'), d:+g('day'), w:g('weekday'), hm:`${g('hour')}:${g('minute')}` };
+};
+
+let slotsByDate = {};   // dateKey -> [{id, hm, iso}]
+let selDate = null, selSlot = null;
+
+const $dates = document.getElementById('bkDates');
+const $slots = document.getElementById('bkSlots');
+const $sel   = document.getElementById('bkSelected');
+const $msg   = document.getElementById('bkMsg');
+
+async function loadSlots() {
+  const from = new Date();
+  const to = new Date(Date.now() + (DAYS_AHEAD-1) * 864e5);
+  try {
+    const url = `${CALYN_BASE}/api/public/availability?apiKey=${encodeURIComponent(CALYN_API_KEY)}&storeId=${CALYN_STORE_ID}&from=${fmtDate(from)}&to=${fmtDate(to)}`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    slotsByDate = {};
+    const now = Date.now();
+    (data.slots || []).forEach(s => {
+      const j = jstParts(s.startAt);
+      const [Y, M, D] = j.dateKey.split('-').map(Number);
+      // Web予約の締切は「枠の前日22:00(JST)」まで。これを過ぎた枠は表示しない
+      const deadline = Date.UTC(Y, M - 1, D, 0, 0, 0) - 11 * 3600000; // 前日22:00 JST = 当日0:00JST(UTC-9h)の2時間前
+      if (now >= deadline) return;
+      const arr = (slotsByDate[j.dateKey] ||= []);
+      if (!arr.some(x => x.hm === j.hm)) arr.push({ id: s.id, hm: j.hm, iso: s.startAt }); // 同時刻枠は1つに集約
+    });
+    Object.values(slotsByDate).forEach(a => a.sort((x,y) => x.hm.localeCompare(y.hm)));
+    renderDates();
+    const total = Object.values(slotsByDate).reduce((n,a) => n + a.length, 0);
+    if (total > 0) {
+      document.getElementById('heroSlotNote').textContent = `いま予約できる体験枠は、直近2週間で ${total} 件です`;
+    }
+  } catch (e) {
+    $slots.innerHTML = `<p class="bk-empty-msg">空き枠の取得に失敗しました。お手数ですが、ページ下部のリンク先またはお電話（0568-84-0340）からご予約ください。</p>`;
+    $dates.innerHTML = '';
+  }
+}
+
+function renderDates() {
+  $dates.innerHTML = '';
+  const today = new Date();
+  let firstWith = null;
+  for (let i = 0; i < DAYS_AHEAD; i++) {
+    const d = new Date(today.getFullYear(), today.getMonth(), today.getDate() + i);
+    const key = fmtDate(d);
+    const cnt = (slotsByDate[key] || []).length;
+    const el = document.createElement('div');
+    el.className = 'bk-date' + (cnt ? '' : ' empty') + (d.getDay()===6?' sat':d.getDay()===0?' sun':'');
+    el.innerHTML = `<div class="dow">${i===0?'今日':i===1?'明日':DOW[d.getDay()]+'曜'}</div><div class="d en">${d.getMonth()+1}/${d.getDate()}</div><div class="cnt">${cnt ? '◯ '+cnt+'枠' : '×'}</div>`;
+    if (cnt) {
+      el.onclick = () => selectDate(key, el);
+      if (!firstWith) firstWith = { key, el };
+    }
+    $dates.appendChild(el);
+  }
+  if (firstWith) selectDate(firstWith.key, firstWith.el);
+  else $slots.innerHTML = `<p class="bk-empty-msg">現在、直近2週間のWeb予約枠が満席です。お電話（0568-84-0340）にてご相談ください。</p>`;
+}
+
+function selectDate(key, el) {
+  selDate = key; selSlot = null;
+  document.querySelectorAll('.bk-date').forEach(x => x.classList.remove('active'));
+  el.classList.add('active');
+  updateSelected();
+  $slots.innerHTML = '';
+  (slotsByDate[key] || []).forEach(s => {
+    const b = document.createElement('div');
+    b.className = 'bk-slot';
+    b.textContent = s.hm;
+    b.onclick = () => {
+      selSlot = s;
+      document.querySelectorAll('.bk-slot').forEach(x => x.classList.remove('active'));
+      b.classList.add('active');
+      // モード排他: 枠を選んだら希望日時リクエストの入力はクリア
+      const rd = document.getElementById('bkReqDate'); if (rd) rd.value = '';
+      const rh = document.getElementById('bkReqHour'); if (rh) rh.value = '';
+      updateSelected();
+      document.getElementById('bkName').scrollIntoView({ behavior:'smooth', block:'center' });
+    };
+    $slots.appendChild(b);
+  });
+}
+
+function reqIsSet() {
+  const d = document.getElementById('bkReqDate');
+  const h = document.getElementById('bkReqHour');
+  return !!(d && h && d.value && h.value);
+}
+function setSubmitLabel(main, sub) {
+  document.getElementById('bkSubmit').innerHTML = main + '<small>' + sub + '</small>';
+}
+function updateSelected() {
+  if (selSlot) {
+    const j = jstParts(selSlot.iso);
+    $sel.classList.add('show');
+    $sel.innerHTML = `ご希望日時：<b>${j.m}月${j.d}日（${j.w}） ${j.hm}〜</b>｜無料体験トレーニング`;
+    setSubmitLabel('この内容で無料体験を予約する', '送信後すぐに予約が確定します');
+  } else if (reqIsSet()) {
+    const p = document.getElementById('bkReqDate').value.split('-');
+    const hm = document.getElementById('bkReqHour').value + ':' + document.getElementById('bkReqMin').value;
+    $sel.classList.add('show');
+    $sel.innerHTML = `ご希望日時：<b>${+p[1]}月${+p[2]}日 ${hm}〜</b>（空き状況を確認して折り返します）`;
+    setSubmitLabel('この希望日時でリクエストする', '店舗から折り返しご連絡します');
+  } else {
+    $sel.classList.remove('show');
+    setSubmitLabel('この内容で無料体験を予約する', '送信後すぐに予約が確定します');
+  }
+}
+
+function showDone(title, detailHtml, subHtml) {
+  document.getElementById('bkDoneTitle').textContent = title;
+  document.getElementById('bkDoneDetail').innerHTML = detailHtml;
+  document.getElementById('bkDoneSub').innerHTML = subHtml;
+  // 公式LINEの案内（LINE_ADD_URL が設定されている店舗のみ表示）
+  if (typeof LINE_ADD_URL === 'string' && LINE_ADD_URL) {
+    const lineEl = document.getElementById('bkLine');
+    document.getElementById('bkLineBtn').href = LINE_ADD_URL;
+    const qr = document.getElementById('bkLineQr');
+    if (typeof LINE_QR_SRC === 'string' && LINE_QR_SRC) {
+      qr.onload = () => qr.removeAttribute('hidden');
+      qr.onerror = () => qr.setAttribute('hidden', ''); // QR画像が無ければ非表示
+      qr.src = LINE_QR_SRC;
+    }
+    lineEl.removeAttribute('hidden');
+  }
+  document.getElementById('bkMain').style.display = 'none';
+  const done = document.getElementById('bkDone');
+  done.classList.add('show');
+  done.scrollIntoView({ behavior:'smooth', block:'center' });
+}
+
+document.getElementById('bkForm').addEventListener('submit', async ev => {
+  ev.preventDefault();
+  $msg.className = 'bk-msg';
+  // モード判定: 枠を選択→予約 / 希望日時を入力→リクエスト
+  const mode = selSlot ? 'slot' : (reqIsSet() ? 'request' : null);
+  if (!mode) {
+    $msg.className = 'bk-msg err';
+    $msg.textContent = '上で体験枠を選ぶか、「希望の日時を送る」からご希望日時をご入力ください。';
+    document.querySelector('.bk-box').scrollIntoView({ behavior:'smooth', block:'start' });
+    return;
+  }
+  const name = document.getElementById('bkName').value.trim();
+  const phone = document.getElementById('bkPhone').value.trim();
+  const email = document.getElementById('bkEmail').value.trim();
+  const note = document.getElementById('bkNote').value.trim();
+  const company = document.getElementById('bkHp').value;
+  const btn = document.getElementById('bkSubmit');
+  btn.disabled = true; btn.style.opacity = .6;
+  try {
+    if (mode === 'slot') {
+      const { res, data } = await submitPublic('/api/public/bookings', {
+        apiKey: CALYN_API_KEY, slotId: selSlot.id,
+        guestName: name, guestPhone: phone, guestEmail: email,
+        note: '【LP:春日井店/無料体験】' + note + utmSuffix(), company,
+      });
+      if (!res.ok || !data.ok) throw new Error(data.error || 'BOOKING_FAILED');
+      trackCV('booking');
+      const j = jstParts(selSlot.iso);
+      showDone('ご予約ありがとうございます！',
+        `<b style="color:var(--gold2)">${j.m}月${j.d}日（${j.w}） ${j.hm}〜</b> にて無料体験のご予約を承りました。`,
+        '当日は手ぶらでOK。スタッフ一同、お会いできるのを楽しみにしています。<br>ご都合が悪くなった場合は <a href="tel:0568840340" style="color:var(--gold2)">0568-84-0340</a> までご連絡ください。');
+    } else {
+      const d = document.getElementById('bkReqDate').value;
+      const hm = document.getElementById('bkReqHour').value + ':' + document.getElementById('bkReqMin').value;
+      const { res, data } = await submitPublic('/api/public/booking-requests', {
+        apiKey: CALYN_API_KEY, storeId: CALYN_STORE_ID,
+        guestName: name, guestPhone: phone, guestEmail: email,
+        preferredDate: d, preferredTime: hm,
+        note: '【LP:春日井店/希望日時リクエスト】' + note + utmSuffix(), company,
+      });
+      if (!res.ok || !data.ok) throw new Error(data.error || 'REQUEST_FAILED');
+      trackCV('booking');
+      const p = d.split('-');
+      showDone('ご希望を承りました',
+        `<b style="color:var(--gold2)">${+p[1]}月${+p[2]}日 ${hm}〜</b> でご希望を受け付けました。`,
+        '空き状況を確認のうえ、店舗より折り返しご連絡します。（この時点では予約は確定していません）<br>お急ぎの場合は <a href="tel:0568840340" style="color:var(--gold2)">0568-84-0340</a> までどうぞ。');
+    }
+  } catch (e) {
+    btn.disabled = false; btn.style.opacity = 1;
+    $msg.className = 'bk-msg err';
+    if (String(e.message).includes('SLOT')) {
+      $msg.textContent = '申し訳ありません、この枠はたった今埋まってしまいました。空き状況を更新しますので、別の日時をお選びください。';
+      loadSlots();
+    } else if (String(e.message).includes('NOTIFY_UNAVAILABLE')) {
+      $msg.textContent = '現在オンラインでのリクエスト受付を準備中です。お手数ですが、お電話（0568-84-0340）でご希望をお伝えください。';
+    } else {
+      $msg.textContent = '送信に失敗しました。お手数ですが時間をおいて再度お試しいただくか、お電話（0568-84-0340）でご連絡ください。';
+    }
+  }
+});
+
+loadSlots();
+
+/* ====== 希望日時リクエスト（カレンダー登録なし・店舗へDiscord通知＋お客様へ受付メール） ====== */
+(function () {
+  const toggle = document.getElementById('bkReqToggle');
+  const panel = document.getElementById('bkReqBody');
+  if (!toggle || !panel) return;
+  const hourSel = document.getElementById('bkReqHour');
+  const dateInput = document.getElementById('bkReqDate');
+  for (let h = 10; h <= 21; h++) {
+    const o = document.createElement('option');
+    o.value = String(h).padStart(2, '0');
+    o.textContent = h + '時';
+    hourSel.appendChild(o);
+  }
+  dateInput.min = fmtDate(new Date());
+
+  toggle.addEventListener('click', () => {
+    const opening = panel.hasAttribute('hidden');
+    if (opening) { panel.removeAttribute('hidden'); toggle.setAttribute('aria-expanded', 'true'); }
+    else { panel.setAttribute('hidden', ''); toggle.setAttribute('aria-expanded', 'false'); }
+  });
+
+  // 希望日時を入力したら、枠選択（スロット）を解除してリクエストモードに切替（送信は下の共通ボタン）
+  const minSel = document.getElementById('bkReqMin');
+  const onReqChange = () => {
+    if (dateInput.value || hourSel.value) {
+      selSlot = null;
+      document.querySelectorAll('.bk-slot').forEach(x => x.classList.remove('active'));
+    }
+    updateSelected();
+  };
+  dateInput.addEventListener('change', onReqChange);
+  hourSel.addEventListener('change', onReqChange);
+  minSel.addEventListener('change', onReqChange);
+})();
+</script>
+
+<!-- BudouX: 日本語を文節単位で自然に改行（ブラウザ・スマホ問わず単語の途中で折り返さない） -->
+<script type="module">
+(async () => {
+  try {
+    const { loadDefaultJapaneseParser } = await import('https://cdn.jsdelivr.net/npm/budoux@0.8.4/+esm');
+    const parser = loadDefaultJapaneseParser();
+    const sel = '.sec-lead,.concept-state,.worries-answer,.worries-box li,.hero p.sub,.stats-note,.ba-disclaimer,.ba-caption,.price-notes,.trainer-note,.flow-time,.bk-fallback,.bk-help,.bk-req-note,.c-card p,.f-body p,.f-body .note,.faq summary,.faq .a,.bk-policy';
+    document.querySelectorAll(sel).forEach((el) => { try { parser.applyToElement(el); } catch (e) {} });
+  } catch (e) {}
+})();
+</script>
+</body>
+</html>
